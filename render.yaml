@@ -37,8 +37,6 @@ services:
     envVars:
       - key: APP_ENV
         value: production
-      - key: APP_URL
-        value: https://suhrit-organization.onrender.com
       - key: APP_FORCE_HTTPS
         value: "true"
       - key: APP_KEY
