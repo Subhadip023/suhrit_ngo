@@ -16,7 +16,7 @@ COPY . .
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Install PHP dependencies
-RUN composer install --no-dev --optimize-autoloader
+RUN composer install --no-dev --optimize-autoloader --no-plugins
 
 # Install Node.js & Build Frontend
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
